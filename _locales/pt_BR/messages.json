@@ -1,0 +1,21 @@
+{
+  "extName": { "message": "Reel Advance" },
+  "extDescription": { "message": "Avança sozinho para o próximo vídeo quando o atual termina no Instagram. Também rola o feed contínuo ou post a post." },
+  "commandToggle": { "message": "Iniciar/parar" },
+  "mode": { "message": "Modo" },
+  "modeVideo": { "message": "Ao fim do vídeo" },
+  "modeStep": { "message": "Post a post" },
+  "modeContinuous": { "message": "Contínuo" },
+  "speed": { "message": "Velocidade:" },
+  "interval": { "message": "Intervalo:" },
+  "photos": { "message": "Fotos:" },
+  "start": { "message": "Iniciar" },
+  "stop": { "message": "Parar" },
+  "openInstagram": { "message": "Abra instagram.com" },
+  "reloadHint": { "message": "Se já está aberto, recarregue a página." },
+  "hint": {
+    "message": "Atalho: $SHORTCUT$ · Esc para parar",
+    "placeholders": { "shortcut": { "content": "$1" } }
+  },
+  "hintNoShortcut": { "message": "Defina um atalho em chrome://extensions/shortcuts · Esc para parar" }
+}

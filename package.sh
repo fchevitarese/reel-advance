@@ -8,5 +8,5 @@ OUT="dist/reel-advance-v${VERSION}.zip"
 
 mkdir -p dist
 rm -f "$OUT"
-zip -q "$OUT" manifest.json background.js content.js popup.html popup.js icons/icon-*.png
+zip -qr "$OUT" _locales manifest.json background.js content.js popup.html popup.js icons/icon-*.png
 echo "$OUT ($(du -h "$OUT" | cut -f1))"

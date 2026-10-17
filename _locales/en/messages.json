@@ -1,0 +1,21 @@
+{
+  "extName": { "message": "Reel Advance" },
+  "extDescription": { "message": "Automatically moves to the next Instagram video when the current one ends. Also scrolls the feed continuously or post by post." },
+  "commandToggle": { "message": "Start/stop" },
+  "mode": { "message": "Mode" },
+  "modeVideo": { "message": "When the video ends" },
+  "modeStep": { "message": "Post by post" },
+  "modeContinuous": { "message": "Continuous" },
+  "speed": { "message": "Speed:" },
+  "interval": { "message": "Interval:" },
+  "photos": { "message": "Photos:" },
+  "start": { "message": "Start" },
+  "stop": { "message": "Stop" },
+  "openInstagram": { "message": "Open instagram.com" },
+  "reloadHint": { "message": "If it's already open, reload the page." },
+  "hint": {
+    "message": "Shortcut: $SHORTCUT$ · Esc to stop",
+    "placeholders": { "shortcut": { "content": "$1" } }
+  },
+  "hintNoShortcut": { "message": "Set a shortcut at chrome://extensions/shortcuts · Esc to stop" }
+}
