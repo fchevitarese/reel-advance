@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 240px; margin: 0; padding: 14px; font: 13px system-ui, sans-serif; background: #121212; color: #eee; }
+    h1 { font-size: 14px; margin: 0 0 12px; }
+    label { display: block; margin: 10px 0 4px; color: #aaa; }
+    select, input[type=range] { width: 100%; }
+    select { background: #222; color: #eee; border: 1px solid #333; border-radius: 6px; padding: 4px; }
+    button { width: 100%; margin-top: 14px; padding: 9px; border: 0; border-radius: 8px; font-weight: 600; cursor: pointer; background: #6366f1; color: #fff; }
+    button.on { background: #444; }
+    button:disabled { opacity: .5; cursor: default; }
+    .hint { margin-top: 10px; font-size: 11px; color: #777; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <h1>Reel Advance</h1>
+
+  <label for="mode">Modo</label>
+  <select id="mode">
+    <option value="video">Ao fim do vídeo</option>
+    <option value="step">Post a post</option>
+    <option value="continuous">Contínuo</option>
+  </select>
+
+  <div id="speedRow">
+    <label for="speed">Velocidade: <span id="speedVal"></span> px/s</label>
+    <input id="speed" type="range" min="10" max="600" step="10">
+  </div>
+
+  <div id="intervalRow">
+    <label for="interval" id="intervalLabel">Intervalo:<span id="intervalVal"></span> s</label>
+    <input id="interval" type="range" min="1" max="30" step="1">
+  </div>
+
+  <button id="toggle" disabled>…</button>
+  <div class="hint" id="hint">Atalho: Alt+Shift+Y · Esc para parar</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

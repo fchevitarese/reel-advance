@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Reel Advance",
+  "version": "1.0.0",
+  "description": "Avança sozinho para o próximo vídeo quando o atual termina no Instagram. Também rola o feed contínuo ou post a post.",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Reel Advance",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "toggle-scroll": {
+      "suggested_key": { "default": "Alt+Shift+Y" },
+      "description": "Iniciar/parar"
+    }
+  }
+}
